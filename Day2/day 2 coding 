@@ -1,0 +1,17 @@
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("tipe data angka bulat dan angka desimal");
+		byte bb=46;
+		short umur=16;
+		int angka=12;
+		float suhu=36.3f;
+		double tb=1.39;
+		long nilai=9;
+		System.out.println("bb="+bb+ "kg");
+		System.out.println("umur="+umur+"tahun");
+		System.out.println("angka="+angka);
+		System.out.println("suhu="+suhu);
+		System.out.println("tb="+tb+"tb");
+		System.out.println("nilai="+nilai);
+	}
+}
