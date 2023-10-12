@@ -1,0 +1,19 @@
+public class OperatorAritmatika {
+	public static void main(String[] args) {
+	 double a=5;
+	 double b=8;
+	 
+	 double jumlah=a+b;
+	 double kurang=a-b;
+	 double kali=a*b;
+	 double bagi=a/b;
+	 double sisabagi=a%b;
+	 
+	 System.out.println("jumlah="+jumlah);
+	 System.out.println("kurang="+kurang);
+	 System.out.println("kali="+kali);
+	 System.out.println("bagi="+bagi);
+	 System.out.println("sisabagi="+sisabagi);
+	 
+	}
+}
