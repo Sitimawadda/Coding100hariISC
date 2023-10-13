@@ -1,0 +1,13 @@
+public class OperatorPerbandingan{
+	public static void main(String[] args) {
+		int nilai=3;
+		int angka=5;
+		
+		System.out.println(nilai<angka);
+		System.out.println(nilai>angka);
+		System.out.println(nilai<=angka);
+		System.out.println(nilai>=angka);
+		System.out.println(nilai==angka);
+		System.out.println(nilai!=angka);
+	}
+}
