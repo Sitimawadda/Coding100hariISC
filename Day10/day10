@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan nilai a: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Masukkan nilai b: ");
+        int b = scanner.nextInt();
+
+        System.out.print("Masukkan nilai c: ");
+        int c = scanner.nextInt();
+
+        System.out.print("Masukkan nilai d: ");
+        int d = scanner.nextInt();
+
+        System.out.print("Masukkan nilai e: ");
+        int e = scanner.nextInt();
+
+        int min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        if (d < min) {
+            min = d;
+        }
+        if (e < min) {
+            min = e;
+        }
+
+        int max = a;
+        if (b > max) {
+            max = b;
+        }
+        if (c > max) {
+            max = c;
+        }
+        if (d > max) {
+            max = d;
+        }
+        if (e > max) {
+            max = e;
+        }
+
+        System.out.println("Nilai MIN: " + min);
+        System.out.println("Nilai MAX: " + max);
+	}
+}
