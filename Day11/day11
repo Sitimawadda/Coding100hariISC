@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("harga makanan");
+		int harga=input.nextInt( );
+		
+		String kriteria;
+		
+		if (harga < 4000){
+			kriteria ="murah";
+			
+		}else if(harga>7500){
+			kriteria="mahal";
+			
+		}else {
+			kriteria= "sedang";}
+		
+		System.out.println("kriteria :"+kriteria);
+			
+		
+	}
+}
