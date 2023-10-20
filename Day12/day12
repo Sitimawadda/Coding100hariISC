@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("masukkan pendapatan salesman hari ini");
+		
+		double pendapatan =input.nextDouble( );
+		
+		double uangJasa;
+		double uangKomisi;
+		
+		if(pendapatan <=20000){
+			uangJasa=10000;
+			uangKomisi=pendapatan * 0.1;
+			
+		}else if(pendapatan >=20000){
+		uangJasa=20000;
+		uangKomisi=pendapatan*0.15;
+		
+		}else{
+			uangJasa=30000;
+			uangKomisi=pendapatan *0.2;
+		}
+		double totalPendapatan =uangJasa +uangKomisi;
+		
+		System.out.println("total pendapatan salesman hari ini = " +totalPendapatan);
+		
+		
+	
+	}
+}
