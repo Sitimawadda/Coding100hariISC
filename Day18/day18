@@ -1,0 +1,13 @@
+public class Main {
+	public static void main(String[] args) {
+	int angka = 5;
+        int faktorial = 1;
+
+        for (int i = 1; i <= angka; i++) {
+            faktorial *= i;
+        }
+
+        System.out.println("Hasil perkalian dari 1 hingga " + angka + " adalah " + faktorial);
+				
+	}
+}
