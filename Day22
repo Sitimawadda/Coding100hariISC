@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		char huruf;
+		Scanner input=new Scanner(System.in);
+		System.out.println("masukkan huruf:");
+		huruf=input.next( ).charAt(0);
+		
+		switch(huruf){
+		case 'B':
+		System.out.println("Biru");
+		break;
+		case 'H':
+		System.out.println("Hijau");
+		break;
+		case 'U':
+		System.out.println("ungu");
+		break;
+		default:
+		System.out.println("huruf yang di masukkan salah");
+		
+		
+		}
+	}
+}
