@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("~•Daftar Merk Skincare~• :");
+		       
+		
+		System.out.println("1.Wardah");
+		System.out.println("2.Viva");
+		System.out.println("3.Pixy");
+		System.out.println("4.Purbasari");
+		
+		
+		System.out.print("Pilih Merk Skincare (1-4) : ");
+		int pilihan=input.nextInt();
+		
+		if(pilihan==1){
+			System.out.println("anda memilih merk Wardah");
+		}else if(pilihan==2){
+			System.out.println("anda memilih merk Viva");
+			
+		}else if(pilihan==3){
+			System.out.println("anda memilih merk Pixy");
+		}else if(pilihan==4){
+			System.out.println("anda memilih merk Purbasari");
+		}else{
+			System.out.println("merk skincare yang anda pilih tidak valid.");
+		}
+			
+		
+		
+		
+		
+		
+	}
+}
