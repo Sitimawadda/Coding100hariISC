@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+		
+        String nama, nim, matkul;
+        double nilai_presensi, nilai_tugas, nilai_uas, nilai_akhir;
+
+        System.out.println("===nilai input mahasiswa===");
+        System.out.print("masukkan nama  :");
+        nama = input.nextLine();
+        System.out.print("masukkan nim   :");
+        nim = input.nextLine();
+        System.out.print("masukkan matkul:");
+        matkul= input.nextLine();
+        System.out.print("masukkan nilai_presensi:");
+        nilai_presensi = input.nextDouble();
+        System.out.print("masukkan nilai_tugas:");
+        nilai_tugas = input.nextDouble();
+        System.out.print("masukkan nilai_uas:");
+        nilai_uas = input.nextDouble();
+
+        nilai_akhir = (0.30 * nilai_presensi + 0.30 * nilai_tugas + 0.40 * nilai_uas);
+
+        System.out.println("rata-rata nilai anda adalah " + nilai_akhir);
+
+        String predikat;
+
+        if (nilai_akhir == 100) {
+            predikat = "nilai salah";
+        } else if (nilai_akhir >= 85) {
+            predikat = "sangat baik";
+        } else if (nilai_akhir >= 70) {
+            predikat = "cukup";
+        } else if (nilai_akhir >= 60) {
+            predikat = "kurang";
+        } else {
+            predikat = "error";
+        }
+
+        System.out.println("predikat nilai anda " + predikat);
+
+        if (nilai_akhir == 100) {
+            System.out.println("nilai anda tidak di input");
+        } else if (nilai_akhir >= 85) {
+            System.out.println("dan anda dinyatakan lulus");
+        } else {
+            System.out.println("dan dinyatakan tidak lulus");
+        }
+		
+	}
+}
