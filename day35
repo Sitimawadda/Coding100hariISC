@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		System.out.print("masukkan waktu sholat subuh \t :");
+		String subuh=input.nextLine();
+		System.out.print("masukkan waktu sholat dzuhur \t :");
+		String dzuhur=input.nextLine();
+		System.out.print("masukkan waktu sholat asar \t :");
+		String asar=input.nextLine();
+		System.out.print("masukkan waktu sholat magrib \t :");
+		String magrib=input.nextLine();
+		System.out.print("masukkan waktu sholat isya \t :");
+		String isya=input.nextLine();
+		
+		System.out.println("jadwal waktu sholat 5 waktu :");
+		System.out.println("subuh \t :" + subuh);
+		System.out.println("dzuhur \t :" + dzuhur);
+		System.out.println("asar \t :" +asar);
+		System.out.println("magrib \t :" + magrib);
+		System.out.println("isya \t :" + isya);
+		
+	
+		
+	}
+}
