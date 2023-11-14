@@ -1,0 +1,14 @@
+public class Main {
+	public static void main(String[] args) {
+		int tinggi=5;
+		for(int i = 1; i <= tinggi ;i++){
+			for(int j =tinggi; j > i; j--){
+				System.out.print(" ");
+			}
+			for(int k =1;k <= i;k++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
