@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		System.out.print("masukkan umur :");
+		int umur=input.nextInt();
+		
+		if(umur >= 0 && umur <=5){
+			System.out.println("kategori usia : balita");
+		}else if(umur >= 6 && umur <= 12){
+			System.out.println("kategori usia : anak-anak");
+		}else if(umur >= 13 && umur <= 18){
+			System.out.println("kategori usia : remaja");
+		}else if(umur >= 19 && umur <= 54){
+		System.out.println("kategori usia : dewasa");
+		}else if(umur >=55 ){
+		  	System.out.println("kategori usia : lansia");
+		}else{
+		  	System.out.println("umur yang anda masukkan tidak valid");
+		}
+		  	
+    	
+	
+	}
+}
