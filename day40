@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.print("masukkan tagihan listrik :");
+		int tagihan_Listrik=input.nextInt();
+		
+		if(tagihan_Listrik > 500000){
+			System.out.println("penggunaan listrik berlebih,kurangi penggunaan listrik");
+		}else{
+			System.out.println("tagihan listrik normal");
+		}
+		
+	}
+}
