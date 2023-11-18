@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("masukkan jumlah baju :");
+		int JumlahBaju=input.nextInt();
+		if(JumlahBaju > 5){
+			System.out.println("banyak cucian,luangkan waktu untuk mencucinya");
+		}else{
+			System.out.println("cucian sedikit");
+		}
+		
+		
+	}
+}
