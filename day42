@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		/*Buat program untuk mengkonversi angka menjadi kata-kata dalam bahasa Indonesia (misalnya 100 menjadi "seratus", 200 menjadi "dua ratus", dst).*/
+		Scanner input=new Scanner(System.in);
+		System.out.print("masukkan angka :");
+		int angka=input.nextInt();
+		
+		switch(angka){
+			case 100:
+			System.out.println("konversi kata-katanya adalah seratus");
+			break;
+			case 200:
+			System.out.println("konversi kata-katanya adalah dua ratus");
+			break;
+			case 300:
+			System.out.println("konversi kata-katanya adalah tiga ratus");
+			break;
+			case 400:
+			System.out.println("konversi kata-katanya adalah empat ratus");
+			break;
+			case 500:
+			System.out.println("konversi kata-katanya1 adalah lima ratus");
+			break;
+			default:
+			System.out.println("anda salah memasukkan angka");
+		}	
+	}
+}
