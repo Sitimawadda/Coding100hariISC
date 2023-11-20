@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	
+		/* Buat program untuk menampilkan nama planet berdasarkan inputan angka*/
+	Scanner input=new Scanner(System.in);
+	System.out.print("masukkan angka : ");
+	int angka=input.nextInt();
+	
+	switch(angka){
+		case 1:
+		System.out.println("merkurius");
+		break;
+		
+		case 2:
+		System.out.println("venus");
+		break;
+		
+		case 3:
+		System.out.println("bumi");
+		break;
+		
+		case 4:
+		System.out.println("mars");
+		break;
+		
+		case 5:
+		System.out.println("jupiter");
+		break;
+		
+		case 6:
+		System.out.println("saturnus");
+		break;
+		
+		case 7:
+		System.out.println("uranus");
+		break;
+		
+		case 8:
+		System.out.println("neptunus");
+		break;
+		
+		default:
+		System.out.println("anda salah memasukkan angka");
+	}	
+	}
+}
