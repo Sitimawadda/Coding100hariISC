@@ -1,0 +1,12 @@
+public class Main {
+	public static void main(String[] args) {
+		int angka=1;
+	
+		while(angka <= 50){
+			if(angka % 2 != 0)
+			System.out.println("angka " + angka + " adalah bilangan ganjil");
+			angka++;
+		}
+		
+	}
+}
