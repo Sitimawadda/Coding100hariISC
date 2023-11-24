@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int angka;
+		System.out.println("masukkan angka : ");
+		angka =input.nextInt();
+		
+		while(angka != 0){
+			if(angka < 0){
+		System.out.println("angka ini adalah angka negatif");
+	
+		}else{
+			System.out.println("angka ini adalah angka positif");
+			
+		}
+		System.out.print("masukkan angka lain(0 untuk keluar) : ");
+		angka=input.nextInt();
+		
+		}
+		System.out.println("program selesai");
+		
+		}
+	}
