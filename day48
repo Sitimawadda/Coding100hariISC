@@ -1,0 +1,12 @@
+public class Main {
+	public static void main(String[] args) {
+		int angka=1;
+		int hasil;
+		while(angka <= 10){
+			hasil=angka*5;
+			System.out.println(angka + " x 5 = "  + hasil);
+			angka++;
+		}
+			
+	}
+}
