@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		System.out.print("masukkan bilangan pertama : ");
+		int bilangan1=input.nextInt();
+		System.out.print("masukkan bilangan kedua : ");
+		int bilangan2=input.nextInt();
+		int BilanganTerbesar=(bilangan1 > bilangan2)?bilangan1 : bilangan2;
+		System.out.println("bilangan terbesar adalah : " + BilanganTerbesar);
+		
+	}
+}
