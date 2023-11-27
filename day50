@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.print("masukkan suhu dalam celcius : ");
+		int suhu=input.nextInt();
+		
+		String hasil=(suhu > 30)?"panas":"tidak panas";
+		System.out.println("suhu " + hasil);
+		
+		
+	}
+}
