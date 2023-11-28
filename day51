@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.print("masukkan jumlah gol yang di cetak pemain : ");
+		
+		int JumlahGol=input.nextInt();
+		
+		int bonus=JumlahGol >10 ?1000000 : 0;
+		System.out.println("jumlah bonus yang diterima " + bonus +" rupiah");
+		
+	}
+}
