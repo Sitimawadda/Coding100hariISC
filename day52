@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+                int angka = 1;
+
+        do {
+            if (angka % 7 == 0) {
+                System.out.println(angka);
+            }
+            angka++;
+        } while (angka <= 100);
+    }
+}
+		
+	
