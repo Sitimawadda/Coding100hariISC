@@ -1,0 +1,18 @@
+public class MengambilDataDariArray {
+	public static void main(String[] args) {
+		System.out.println("°~cara simpel~°");
+		
+		String[]nama ={"mawaddah " ," putri "," nisa"," atirah"," cinta "};
+		System.out.println(nama[0]);
+		
+		
+		System.out.println("•~cara ribet~• ");
+		String[]Nama=new String[5];
+		Nama[0]="mawaddah";
+		Nama[1]="putri";
+		Nama[2]="nisa";
+		Nama[3]="atirah";
+		Nama[4]="cinta";
+		System.out.println(nama[0]);
+	}
+}
