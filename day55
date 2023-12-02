@@ -1,0 +1,13 @@
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		int[]bilangan ={10,45,23,74,18};
+		int i =0;
+		
+		while(i <bilangan.length){
+			System.out.println(bilangan[i]);
+			i++;
+		}
+		
+	}
+}
