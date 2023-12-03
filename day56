@@ -1,0 +1,13 @@
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		int[]nilai ={20,25,30,35,40};
+		int angka=0;
+		do{
+			System.out.println(nilai[angka]);
+			angka++;
+		}while(angka < nilai.length);
+		
+		
+	}
+}
