@@ -1,0 +1,11 @@
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		
+		int[]nilai ={18,34,49,53,67};
+		for(int angka : nilai){
+			System.out.println(angka);
+		}
+		
+	}
+}
