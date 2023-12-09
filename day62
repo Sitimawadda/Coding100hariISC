@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] nilai = {45, 20, 35, 19, 25};
+        int maksimal= nilai[0]; 
+
+        int i = 1;
+        while (i < nilai.length) {
+            if (nilai[i] > maksimal) {
+                maksimal = nilai[i];
+            }
+            i++;
+        }
+
+        System.out.println("Nilai terbesar dalam array adalah: " + maksimal);
+    }
+}
+
