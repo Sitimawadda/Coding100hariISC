@@ -1,0 +1,14 @@
+public class CetakAngkaTerkecil {
+    public static void main(String[] args) {
+        int[] angka = {5, 2, 9, 3, 7}; 
+        int angkaTerkecil = angka[0]; 
+         
+        for (int i = 1; i < angka.length; i++) {
+            if (angka[i] < angkaTerkecil) {
+                angkaTerkecil = angka[i];
+            }
+        }
+        System.out.println("Angka terkecil dalam array adalah: " + angkaTerkecil);
+    }
+}
+
