@@ -1,0 +1,9 @@
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+		String []buah= {"jeruk","semangka","apel"};
+		buah[1]="anggur";
+		System.out.println(Arrays.toString(buah));
+		
+	}
+}
