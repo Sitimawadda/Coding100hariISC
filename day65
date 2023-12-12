@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        String[] nama = {"ika", "via", "nia", "ria", "ima", "ira", "tia", "gia","mia"};
+        int i = 0;
+        while (i < nama.length) {
+            if (i % 2 == 0) {
+                System.out.println(nama[i]);
+            }
+            i++;
+        }
+    }
+}
