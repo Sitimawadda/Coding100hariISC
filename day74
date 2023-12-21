@@ -1,0 +1,23 @@
+public class ProgramRataRataArray {
+    public static void main(String[] args) {
+        int[][] nilai = {
+        	{5, 7, 9}, 
+        	{3, 6,10}, 
+        	{8, 7, 4}
+        	};
+
+        int jumlahElemen = 0;
+        int jumlahTotal = 0;
+
+        for (int i = 0; i < nilai.length; i++) {
+            for (int j = 0; j < nilai[i].length; j++) {
+                jumlahElemen++;
+                jumlahTotal += nilai[i][j];
+            }
+        }
+
+        int rataRata = jumlahTotal / jumlahElemen;
+        System.out.println("Rata-rata nilai dalam array adalah: " + rataRata);
+    }
+}
+
