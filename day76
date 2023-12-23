@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class ProgramInputMahasiswa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String[][] dataMahasiswa = new String[5][3];
+
+        
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Masukkan nama Mahasiswa ke-" + (i+1) + ":");
+            dataMahasiswa[i][0] = scanner.nextLine();
+
+            System.out.println("Masukkan nilai UTS Mahasiswa ke-" + (i+1) + ":");
+            dataMahasiswa[i][1] = scanner.nextLine();
+
+            System.out.println("Masukkan nilai UAS Mahasiswa ke-" + (i+1) + ":");
+            dataMahasiswa[i][2] = scanner.nextLine();
+        }
+        System.out.println("\nData Mahasiswa:");
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Nama: " + dataMahasiswa[i][0]);
+            System.out.println("Nilai UTS: " + dataMahasiswa[i][1]);
+            System.out.println("Nilai UAS: " + dataMahasiswa[i][2]);
+            System.out.println();
+        }
+    }
+}
