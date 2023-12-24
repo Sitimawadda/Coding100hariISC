@@ -1,0 +1,27 @@
+public class UbahElemenArray {
+    public static void main(String[] args) {
+       int[][] array = {
+       	{10, 12, 13}, 
+       	{14, 15, 16}, 
+       	{17, 18, 20}
+       	};
+
+      
+        System.out.println("Array sebelum perubahan:");
+        tampilkanArray(array);
+        for (int i = 0; i < array[0].length; i++) {
+            array[0][i] = 5;
+        }
+        System.out.println("Array setelah perubahan:");
+        tampilkanArray(array);
+    }
+    public static void tampilkanArray(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
