@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ProgramMatriks {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input ukuran matriks
+        System.out.print("Masukkan jumlah baris: ");
+        int baris = scanner.nextInt();
+        System.out.print("Masukkan jumlah kolom: ");
+        int kolom = scanner.nextInt();
+
+        // Input elemen-elemen matriks
+        int[][] matriks = new int[baris][kolom];
+        for (int i = 0; i < baris; i++) {
+            for (int j = 0; j < kolom; j++) {
+                System.out.print("Masukkan elemen matriks [" + i + "][" + j + "]: ");
+                matriks[i][j] = scanner.nextInt();
+            }
+        }
+
+        // Menghitung jumlah elemen kelipatan 5 pada setiap kolom
+        int[] jumlahKelipatan5 = new int[kolom];
+        for (int j = 0; j < kolom; j++) {
+            for (int i = 0; i < baris; i++) {
+                if (matriks[i][j] % 5 == 0) {
+                    jumlahKelipatan5[j]++;
+                }
+            }
+        }
+
+        // Menampilkan hasil
+        System.out.println("Jumlah elemen kelipatan 5 pada setiap kolom:");
+        for (int j = 0; j < kolom; j++) {
+            System.out.println("Kolom " + j + ": " + jumlahKelipatan5[j]);
+        }
+    }
+}
+
