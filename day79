@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class CetakElemenArray {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        
+        System.out.print("Masukkan jumlah baris: ");
+        int jumlahBaris = input.nextInt();
+        System.out.print("Masukkan jumlah kolom: ");
+        int jumlahKolom = input.nextInt();
+
+        
+        int[][] array2D = new int[jumlahBaris][jumlahKolom];
+
+       
+        for (int i = 0; i < jumlahBaris; i++) {
+            for (int j = 0; j < jumlahKolom; j++) {
+                System.out.print("Masukkan elemen pada baris " + (i + 1) + " kolom " + (j + 1) + ": ");
+                array2D[i][j] = input.nextInt();
+            }
+        }
+
+       
+        System.out.print("Masukkan nomor baris yang ingin dicetak: ");
+        int nomorBaris = input.nextInt();
+
+        
+        System.out.println("Elemen pada baris " + nomorBaris + " adalah: ");
+        for (int j = 0; j < jumlahKolom; j++) {
+            System.out.print(array2D[nomorBaris - 1][j] + " ");
+        }
+
+        input.close();
+    }
+}
+
