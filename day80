@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan jumlah baris: ");
+        int jumlahBaris = input.nextInt();
+        
+        System.out.print("Masukkan jumlah kolom: ");
+        int jumlahKolom = input.nextInt();
+        
+        int[][] array2D = new int[jumlahBaris][jumlahKolom];
+        
+        System.out.println("Masukkan elemen-elemen array:");
+        for (int i = 0; i < jumlahBaris; i++) {
+            for (int j = 0; j < jumlahKolom; j++) {
+                System.out.print("Masukkan elemen [" + i + "][" + j + "]: ");
+                array2D[i][j] = input.nextInt();
+            }
+        }
+        
+        System.out.println("\nRata-rata setiap baris:");
+        for (int i = 0; i < jumlahBaris; i++) {
+            double jumlahElemen = 0;
+            for (int j = 0; j < jumlahKolom; j++) {
+                jumlahElemen += array2D[i][j];
+            }
+            double rataRata = jumlahElemen / jumlahKolom;
+            System.out.println("Rata-rata baris " + (i+1) + ": " + rataRata);
+        }
+    }
+}
+
