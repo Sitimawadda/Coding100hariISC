@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        /* Membaca ukuran array pertama dari pengguna*/
+        System.out.print("Masukkan jumlah baris array pertama: ");
+        int baris1 = scanner.nextInt();
+        System.out.print("Masukkan jumlah kolom array pertama: ");
+        int kolom1 = scanner.nextInt();
+        
+        /*Membaca ukuran array kedua dari pengguna*/	
+        System.out.print("Masukkan jumlah baris array kedua: ");
+        int baris2 = scanner.nextInt();
+        System.out.print("Masukkan jumlah kolom array kedua: ");
+        int kolom2 = scanner.nextInt();
+        
+        /* Mengecek apakah kedua array dapat digabungkan*/
+        if (kolom1 != kolom2) {
+            System.out.println("Kolom array pertama harus sama dengan kolom array kedua!");
+            return;
+        }
+        
+        /* Membaca elemen-elemen array pertama dari pengguna*/
+        int[][] array1 = new int[baris1][kolom1];
+        System.out.println("Masukkan elemen-elemen array pertama:");
+        for (int i = 0; i < baris1; i++) {
+            for (int j = 0; j < kolom1; j++) {
+                array1[i][j] = scanner.nextInt();
+            }
+        }
+        
+        /*Membaca elemen-elemen array kedua dari pengguna*/
+        int[][] array2 = new int[baris2][kolom2];
+        System.out.println("Masukkan elemen-elemen array kedua:");
+        for (int i = 0; i < baris2; i++) {
+            for (int j = 0; j < kolom2; j++) {
+                array2[i][j] = scanner.nextInt();
+            }
+        }
+        
+        /* Menggabungkan kedua array*/
+        int[][] arrayGabungan = new int[baris1 + baris2][kolom1];
+        for (int i = 0; i < baris1; i++) {
+            for (int j = 0; j < kolom1; j++) {
+                arrayGabungan[i][j] = array1[i][j];
+            }
+        }
+        for (int i = 0; i < baris2; i++) {
+            for (int j = 0; j < kolom2; j++) {
+                arrayGabungan[i + baris1][j] = array2[i][j];
+            }
+        }
+        
+        /*Menampilkan array gabungan*/
+        System.out.println("Array gabungan:");
+        for (int i = 0; i < baris1 + baris2; i++) {
+            for (int j = 0; j < kolom1; j++) {
+                System.out.print(arrayGabungan[i][j] + " ");
+            }
+            System.out.println();
+        }
+        
+        scanner.close();
+    }
+}
