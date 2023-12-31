@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class ProgrammeGandakanArray2D {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan jumlah baris array : ");
+        int baris = scanner.nextInt();
+        System.out.print("Masukkan jumlah kolom array : ");
+        int kolom = scanner.nextInt();
+
+        int[][] array = new int[baris][kolom];
+
+        System.out.println("Masukkan elemen array :");
+
+        int i = 0;
+        while (i < baris) {
+            int j = 0;
+            while (j < kolom) {
+                System.out.print("Masukkan elemen array[" + i + "][" + j + "]: ");
+                array[i][j] = scanner.nextInt();
+
+                // Menggandakan nilai elemen
+                array[i][j] *= 2;
+
+                j++;
+            }
+
+            i++;
+        }
+
+        System.out.println("Hasil array setelah digandakan:");
+
+        i = 0;
+        while (i < baris) {
+            int j = 0;
+            while (j < kolom) {
+                System.out.print(array[i][j] + " ");
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
+}
