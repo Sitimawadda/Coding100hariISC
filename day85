@@ -1,0 +1,43 @@
+
+import java.util.Scanner;
+
+public class DaftarHargaProduk {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Membuat array 2 dimensi untuk menyimpan daftar harga produk//
+        String[][] daftarHargaProduk = new String[3][2];
+        
+        // Mengisi daftar harga produk//
+        daftarHargaProduk[0][0] = "Produk A";
+        daftarHargaProduk[0][1] = "Rp. 100.000";
+        daftarHargaProduk[1][0] = "Produk B";
+        daftarHargaProduk[1][1] = "Rp. 200.000";
+        daftarHargaProduk[2][0] = "Produk C";
+        daftarHargaProduk[2][1] = "Rp. 300.000";
+        
+        // Menampilkan daftar harga produk//
+        System.out.println("Daftar Harga Produk:");
+        for (int i = 0; i < daftarHargaProduk.length; i++) {
+            System.out.println(daftarHargaProduk[i][0] + ": " + daftarHargaProduk[i][1]);
+        }
+        
+        // Meminta input dari pengguna
+        System.out.print("Masukkan nomor produk yang ingin dilihat harganya: ");
+        int nomorProduk = scanner.nextInt();
+        
+        // Memeriksa apakah nomor produk valid//
+        if (nomorProduk >= 1 && nomorProduk <= daftarHargaProduk.length) {
+            // Menampilkan harga produk yang dipilih//
+            System.out.println("Harga " + daftarHargaProduk[nomorProduk-1][0] + ": " 
+                    + daftarHargaProduk[nomorProduk-1][1]);
+        } else {
+            System.out.println("Nomor produk tidak valid.");
+        }
+        
+        scanner.close();
+    }
+
+}
+
