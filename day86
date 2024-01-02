@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class ProgramStokBarang {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Inisialisasi daftar stok barang
+        String[][] stokBarang = {
+            {"Baju", "10"},
+            {"Celana", "15"},
+            {"Sepatu", "20"}
+        };
+
+        // Menampilkan daftar stok barang
+        System.out.println("Daftar Stok Barang:");
+        for (String[] barang : stokBarang) {
+            System.out.println("- " + barang[0] + ": " + barang[1]);
+        }
+
+        // Meminta input pengguna
+        System.out.print("Masukkan nama barang: ");
+        String namaBarang = input.nextLine();
+
+        // Mencari jumlah stok berdasarkan nama barang
+        String jumlahStok = "";
+        for (String[] barang : stokBarang) {
+            if (barang[0].equalsIgnoreCase(namaBarang)) {
+                jumlahStok = barang[1];
+                break;
+            }
+        }
+
+        // Menampilkan jumlah stok barang
+        if (!jumlahStok.isEmpty()) {
+            System.out.println("Jumlah stok " + namaBarang + " adalah " + jumlahStok);
+        } else {
+            System.out.println("Nama barang tidak ditemukan");
+        }
+
+        input.close();
+    }
+}
