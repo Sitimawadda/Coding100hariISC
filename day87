@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+public class Main {
+	public static void main(String[] args) {
+		//membuat objek ArrayList//
+		ArrayList lemari =new ArrayList( );
+		
+		//mengisi lemari dengan beberapa benda//
+		lemari.add ("baju");
+		lemari.add ("piyama");
+		lemari.add (150);
+		lemari.add (12334.555);
+		lemari.add (false);
+		
+		//menghapus 150 dari lemari//
+		lemari.remove (Integer.valueOf(150));
+		
+		//menampilkan isi lemari//
+		System.out.println (lemari);
+		
+		//menampilkan banyak isi lemari//
+		System.out.println ("lemari berisi " + lemari.size( ) + " item ");
+		
+		
+	}
+}
