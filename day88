@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class TampilkanElemenUnik {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Menerima input ukuran array 3 dimensi
+        System.out.print("Masukkan ukuran array (lapisan, baris, kolom): ");
+        int lapisan = scanner.nextInt();
+        int baris = scanner.nextInt();
+        int kolom = scanner.nextInt();
+
+        // Membuat array 3 dimensi
+        int[][][] arr = new int[lapisan][baris][kolom];
+
+        // Menerima input elemen array
+        System.out.println("Masukkan elemen array:");
+        for (int i = 0; i < lapisan; i++) {
+            System.out.println("Lapisan " + (i + 1) + ":");
+            for (int j = 0; j < baris; j++) {
+                for (int k = 0; k < kolom; k++) {
+                    arr[i][j][k] = scanner.nextInt();
+                }
+            }
+        }
+
+        // Menampilkan elemen unik dari setiap lapisan
+        for (int i = 0; i < lapisan; i++) {
+            System.out.println("Elemen unik pada lapisan " + (i + 1) + ":");
+            printUniqueElements(arr[i]);
+        }
+
+        scanner.close();
+    }
+
+    // Method untuk menampilkan elemen unik dari lapisan
+    public static void printUniqueElements(int[][] arr) {
+        int[] count = new int[1001]; // Maksimum elemen array adalah 1000
+        int rows = arr.length;
+        int cols = arr[0].length;
+
+        // Menghitung jumlah muncul setiap elemen
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                count[arr[i][j]]++;
+            }
+        }
+
+        // Menampilkan elemen unik yang hanya muncul 1 kali
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (count[arr[i][j]] == 1) {
+                    System.out.print(arr[i][j] + " ");
+                }
+            }
+        }
+        System.out.println();
+    }
+}
+
