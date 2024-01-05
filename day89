@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+
+public class DaftarPasien {
+    public static void main(String[] args) {
+        // Membuat ArrayList untuk menyimpan daftar pasien//
+        ArrayList<String> daftarPasien = new ArrayList<>();
+
+        // Membuat ArrayList untuk menyimpan catatan medis pasien//
+        ArrayList<String> catatanMedis = new ArrayList<>();
+
+        // Menambah pasien ke daftar pasien//
+        daftarPasien.add("rima");
+        daftarPasien.add("tiara");
+        daftarPasien.add("cika");
+        daftarPasien.add("tia");
+
+        // Menambah catatan medis untuk setiap pasien//
+        catatanMedis.add("Pasien ini memiliki riwayat alergi terhadap udang");
+        catatanMedis.add("Pasien ini sedang dalam proses penyembuhan luka operasi");
+        catatanMedis.add("Pasien ini memiliki tekanan darah rendah");
+        catatanMedis.add("sudah sembuh dari penyakit tipes");
+        
+        //menghapus tia dari pasien//
+        daftarPasien.remove("tia");
+
+        // Menampilkan daftar pasien beserta catatan medis mereka//
+        for (int i = 0; i < daftarPasien.size(); i++) {
+            String pasien = daftarPasien.get(i);
+            String catatan = catatanMedis.get(i);
+            System.out.println("Pasien: " + pasien);
+            System.out.println("Catatan Medis: " + catatan);
+            System.out.println("-----------------------");
+        }
+    }
+}
+
