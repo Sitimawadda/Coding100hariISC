@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+public class HapusElemenArrayList {
+    public static void main(String[] args) {
+        // Membuat ArrayList//
+        ArrayList<String> daftarNama = new ArrayList<>();
+
+        // Menambahkan elemen ke dalam ArrayList//
+        daftarNama.add("Cia");
+        daftarNama.add("Riska");
+        daftarNama.add("Dea");
+        daftarNama.add("Dewi");
+        daftarNama.add("Iva");
+
+        System.out.println("Sebelum penghapusan:");
+        System.out.println(daftarNama);
+
+        int indeksHapus = 2; // Indeks elemen yang akan dihapus//
+
+        // Melakukan penghapusan elemen//
+        if (indeksHapus >= 0 && indeksHapus < daftarNama.size()) {
+            daftarNama.remove(indeksHapus);
+            
+            System.out.println("Setelah penghapusan:");
+            System.out.println(daftarNama);
+        } else {
+            System.out.println("Indeks elemen yang ingin dihapus tidak valid.");
+        }
+    }
+}
