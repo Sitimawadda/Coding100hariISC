@@ -1,0 +1,15 @@
+public class Main {
+	public static void mahasiswa() {
+		
+		String nama ="Siti Mawaddah";
+		int umur =16;
+		String alamat="ralleanak";
+		
+		System.out.println("nama \t :" + nama);
+		System.out.println("umur \t :" + umur + " tahun");
+		System.out.println("alamat \t :" + alamat);
+	}
+	public static void main (String[] args){
+		mahasiswa();			
+	}
+}
