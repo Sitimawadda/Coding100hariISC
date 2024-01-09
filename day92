@@ -1,0 +1,12 @@
+public class Main {
+	public static  int nilai (){
+		int A = 6;
+		int B = 8;
+		int C =10;
+		return A + B - C;
+	}
+	public static void main (String [] args){
+		System.out.println(nilai());
+		
+	}
+}
