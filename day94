@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+	static int AngkaTerkecil() {
+		Scanner input =new Scanner (System.in);
+		
+		System.out.println("masukkan angka x : ");
+		int x = input.nextInt();
+		
+		System.out.println("masukkan angka y : ");
+		int y = input.nextInt();
+		
+		if (x < y){
+			return x;
+		}else{
+			return y;
+		}
+	}
+			public static void main(String[] args) {
+				System.out.println ("angka terkecil adalah "+ AngkaTerkecil());
+			
+		
+	}
+}
