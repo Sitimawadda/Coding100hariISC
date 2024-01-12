@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    
+
+    static void perulanganFor(int angka) {
+        for (int i = 0; i <= angka; i+=5) {
+            System.out.println("nilai ke-" + i);
+        }    
+    }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan batas nilai : ");
+        int nilai = input.nextInt();
+
+        perulanganFor(nilai);
+
+        input.close();
+    }
+
+}
