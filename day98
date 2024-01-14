@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("masukan teks : ");
+        String teks = input.nextLine();
+
+        char nilaiA = teks.charAt(2);
+        char nilaiB= teks.charAt(5);
+        char nilaiC = teks.charAt(10);       
+
+        System.out.println("Karakter pada index 0\t: " + nilaiA);
+        System.out.println("Karakter pada index 9\t: " + nilaiB);
+        System.out.println("karakter pada index 12\t: " + nilaiC);
+
+
+    }
+
+}
