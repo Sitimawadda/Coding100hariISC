@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        String namaBuah = "Apel,Jeruk,Mangga";
+        
+        String[] daftarBuah = namaBuah.split(",");
+        
+        System.out.println("Daftar Buah:");
+        for (String buah : daftarBuah) {
+            System.out.println(buah);
+        }
+    }
+}
+
