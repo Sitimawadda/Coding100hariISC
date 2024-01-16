@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class FormatStringProgram {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+
+        System.out.print("Masukkan nama depan Anda: ");
+        String NamaDepan = input.nextLine();
+
+        System.out.print("Masukkan nama belakang Anda: ");
+        String NamaBelakang = input.nextLine();
+
+        System.out.print("Masukkan umur Anda: ");
+        int umur = input.nextInt();
+
+        String Biodata = String.format("Nama lengkap: %s, %s\nUmur: %d", NamaDepan, NamaBelakang, umur);
+        System.out.println("\nHasil format: \n" + Biodata);
+    }
+}
